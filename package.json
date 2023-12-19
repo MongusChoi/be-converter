@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "babel src -d build",
     "dev": "nodemon ./src/index.js"
   },
   "engines": {
@@ -20,6 +21,8 @@
   },
   "homepage": "https://github.com/MongusChoi/be-converter#readme",
   "dependencies": {
+    "@babel/cli": "^7.23.4",
+    "@babel/core": "^7.23.6",
     "cookie-parser": "^1.4.6",
     "cors": "^2.8.5",
     "dotenv-safe": "^8.2.0",
