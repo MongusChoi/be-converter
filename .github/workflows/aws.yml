@@ -14,5 +14,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
+      - name: Install Dependency Packages
+        run: npm i
+
       - name: Build
         run: npm run build
